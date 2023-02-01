@@ -9,3 +9,18 @@
         width: 100%;
     }
 }
+
+@media ( min-width: 768px ) {
+
+    .contactItem__containerImg {
+        width: 55px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
+
+}

@@ -82,3 +82,95 @@
 
 
 }
+
+
+@media ( min-width: 768px ) {
+
+    .projectCard {
+        width: 100%;
+        max-width: 350px;
+        position: relative;
+        margin: 10px 0 0 0;
+        padding: 18px;
+        border: 1px solid $black;
+        border-radius: 10px;
+    
+        &__containerImg {
+            width: 100%;
+            img {
+                width: 320px;
+                height: 200px;
+            }
+        }
+    
+        &__title {
+            width: 100%;
+            padding: 10px 0;
+            font-family: $headlines;
+            font-weight: 400;
+            font-size: 2.4rem;
+            color: $black;
+        }
+    
+        &__description {
+            width: 100%;
+            font-family: $generalText;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            color: $black;
+        } 
+    
+        &__containerTechnologies {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat( 3, minmax( 33%, 33% ) );
+            grid-template-rows: repeat( auto-fill );
+            place-items: left;
+            place-content: center;
+            gap: 10px 0;
+            padding: 16px 0 60px 0;
+            .technology__container {
+                width: 100px;
+                height: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $grayMedium;
+                border-radius: 5px;
+                .technology__name {
+                    font-family: $generalText;
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                    line-height: 1.6rem;
+                    color: $grayText;
+                }
+            }
+        }
+    
+        .visitButton {
+            width: 100%;
+            max-width: 110px;
+            height: 35px;
+            position: absolute;
+            bottom: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background: $blueButtons;
+            cursor: pointer;
+            a {
+                font-family: $generalText;
+                font-weight: 400;
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    
+    
+    }
+
+} 

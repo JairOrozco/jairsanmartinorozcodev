@@ -44,3 +44,70 @@
     }
 
 }
+
+@media ( min-width: 768px ) {
+
+    .educationCard {
+        width: 100%;
+        max-width: 350px;
+        height: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 20px;
+        border: 1px solid $black;
+        border-radius: 10px;
+        
+        &__infoSchoolContainer {
+            width: 70%;
+            .period {
+                padding: 5px 0;
+                font-family: $generalText;
+                font-weight: 700;
+                font-size: 1.4rem;
+                color: $black;
+            }
+            .schoolName {
+                padding: 1px 0;
+                font-family: $generalText;
+                font-weight: 400;
+                font-size: 1.4rem;
+                color: $black;
+            }
+            .extraInfoItem {
+                padding: 1px 0;
+                font-family: $generalText;
+                font-weight: 400;
+                font-size: 1.4rem;
+                color: $black;
+            }
+    
+        }
+    
+        &__imageSchoolContainer {
+            width: 90px;
+            img {
+                width: 100%;
+            }
+        }
+    
+    }
+
+}
+
+@media ( min-width: 1024px ) {
+
+    .educationCard {
+        max-width: 430px;
+        
+        &__infoSchoolContainer {
+            width: 70%;
+        }
+    
+        &__imageSchoolContainer {
+            width: 100px;
+        }
+    
+    }
+}

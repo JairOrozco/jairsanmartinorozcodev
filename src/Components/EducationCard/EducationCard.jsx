@@ -18,7 +18,7 @@ export const EducationCard = ( { period, school, extrainfo } ) => {
                 {
                     extrainfo.map( extrainfoitem => 
                             (
-                                <p className="extraInfoItem"> { extrainfoitem } </p>
+                                <p key={ extrainfoitem } className="extraInfoItem"> { extrainfoitem } </p>
                             )
                         )
                 }

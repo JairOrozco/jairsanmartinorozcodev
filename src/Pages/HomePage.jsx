@@ -14,11 +14,11 @@ export const HomePage = () => {
 
         <>
             <h1> 
-                Desarrollador Web Jr. 
+                Desarrollador Web
             </h1>
 
             <p className="homePage__introduction">
-                Soy <b>Frontend Developer con 1 año de experiencia</b> desarrollando proyectos personales. Busco colaborar en una posición como <b>Desarrollador Web Jr.</b> ya que cuento con sólidos conocimientos en <b>HTML, CSS, JavaScript y React.js</b>.
+                Soy <b>Frontend Developer con 1 año de experiencia</b> desarrollando proyectos personales. Busco colaborar en una posición como <b>Desarrollador Web</b> ya que cuento con sólidos conocimientos en <b>HTML, CSS, JavaScript y React.js</b>.
             </p>
 
             <section className="homePage__socialMedia">
@@ -54,41 +54,47 @@ export const HomePage = () => {
             >
                 <PortfolioDescriptionShort />
             </Section>
-                
-            <ProjectCard 
-                projecttitle='Task Machine' 
-                technologies={ [ 'React.js', 'JavaScript', 'Sass', 'Node.js', 'Vite' ] }
-                linkproject='https://jairorozco.github.io/task-machine/'
-            >
-                <TaskMachine />
-            </ProjectCard>
 
-            <ProjectCard 
-                projecttitle='Mario Kart Hot Wheels' 
-                technologies={ [ 'HTML', 'JavaScript', 'Sass' ] }
-                linkproject='https://jairorozco.github.io/hw-mariokart-collection/'
-            >
-                <HotWheels />
-            </ProjectCard>
+            <section className="homePage__containerProjects">
 
-            <ProjectCard 
-                projecttitle='My Next Movie App' 
-                technologies={ [ 'React.js', 'JavaScript', 'React Router', 'API Rest', 'Node.js', 'Vite' ] }
-                linkproject='https://my-next-movie-app.netlify.app/'
-            >
-                <NextMovieApp />
-            </ProjectCard>
+                <ProjectCard 
+                    projecttitle='Task Machine' 
+                    technologies={ [ 'React.js', 'JavaScript', 'Sass', 'Node.js', 'Vite' ] }
+                    linkproject='https://jairorozco.github.io/task-machine/'
+                >
+                    <TaskMachine />
+                </ProjectCard>
 
-            <ProjectCard 
-                projecttitle='Journal App' 
-                technologies={ [ 'React.js', 'Redux', 'React Router', 'Firebase', 'DataBase', 'Autenticación' ] }
-                linkproject='https://journal-application.netlify.app/'
-            >
-                <JournalApp />
-            </ProjectCard>
+                <ProjectCard 
+                    projecttitle='Mario Kart Hot Wheels' 
+                    technologies={ [ 'HTML', 'JavaScript', 'Sass' ] }
+                    linkproject='https://jairorozco.github.io/hw-mariokart-collection/'
+                >
+                    <HotWheels />
+                </ProjectCard>
 
+                <ProjectCard 
+                    projecttitle='My Next Movie App' 
+                    technologies={ [ 'React.js', 'JavaScript', 'React Router', 'API Rest', 'Node.js', 'Vite' ] }
+                    linkproject='https://my-next-movie-app.netlify.app/'
+                >
+                    <NextMovieApp />
+                </ProjectCard>
+
+                <ProjectCard 
+                    projecttitle='Journal App' 
+                    technologies={ [ 'React.js', 'Redux', 'React Router', 'Firebase', 'DataBase', 'Autenticación' ] }
+                    linkproject='https://journal-application.netlify.app/'
+                >
+                    <JournalApp />
+                </ProjectCard>
+
+
+            </section>
+
+            
             <div className="homePage__masProyectos">
-                <a href="https://github.com/JairOrozco">
+                <a href="https://github.com/JairOrozco" target='_blank'>
                     Ver más proyectos
                 </a>
             </div>

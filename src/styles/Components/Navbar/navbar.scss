@@ -56,3 +56,66 @@
     }
 
 }
+
+@media ( min-width: 768px ) {
+
+    .navbar {
+        height: 100px;
+        .logo__container {
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .logo__img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        
+        &__nameJair {
+            width: 45%;
+            font-size: 2.8rem;
+        }
+
+        .handleMenu__container {
+            display: none;
+        }
+
+        .menu__list {
+            width: 45%;
+            position: static;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0px;
+            border-bottom-left-radius: 0;
+            .menu__item {
+                width: 100%;
+                padding: 15px 0;
+                text-align: center;
+            }
+        }
+
+        .showMenu {
+            flex-direction: row;
+        }
+    }
+
+}
+
+@media ( min-width: 1024px ) {
+
+    .navbar {
+        
+        &__nameJair {
+            width: 65%;
+        }
+
+        .menu__list {
+            width: 30%;
+            .menu__item {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

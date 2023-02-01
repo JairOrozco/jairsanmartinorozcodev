@@ -10,66 +10,84 @@ export const AboutPage = () => {
 
 
     return (
-        <>
-            <Section
-                title='Sobre mí'
-            >
-                <AboutMe />
-            </Section>
+        <section className="aboutPage">
 
-            <figure className="aboutPage__containerProfileImage">
-                <img src={ jairImageProfile } alt="Foto Jair San Martin Orozco" />
-            </figure>
+            <section className="aboutPage__containerDesktop_1">
 
-            <Section
-                title='Software'
-            >
-                <SoftwareSkills />
-            </Section>
+                <Section
+                    title='Sobre mí'
+                >
+                    <AboutMe />
+                </Section>
 
-            <div className="aboutPage__containerTechnologies">
-                {
-                    technologiesSkills.map( technology => 
-                            (
-                                <Technology 
-                                    key={ technology }
-                                    technologyName={ technology }
-                                />
+                <figure className="aboutPage__containerProfileImage">
+                    <img src={ jairImageProfile } alt="Foto Jair San Martin Orozco" />
+                </figure>
+
+                <Section
+                    title='Software'
+                >
+                    <SoftwareSkills />
+                </Section>
+
+                <div className="aboutPage__containerTechnologies">
+                    {
+                        technologiesSkills.map( technology => 
+                                (
+                                    <Technology 
+                                        key={ technology }
+                                        technologyName={ technology }
+                                    />
+                                )
                             )
-                        )
-                }
+                    }
 
-            </div>
+                </div>
 
-            <Section
-                title='Idiomas'
-            >
-                <Languages />
-            </Section>
+                
 
-            <Section
-                title='Formación'
-            >
-            </Section>
+            </section>
+            
 
-            <EducationCard
-                period='Actualidad' 
-                school='Platzi'
-                extrainfo={ [ 'Escuela de Desarrollo Web', 'Escuela de Javascript', 'Escuela de Inglés' ] }
-            />
+            <section className="aboutPage__containerDesktop_2">
 
-            <EducationCard
-                period='Generación 2015 - 2019' 
-                school='Universidad Nacional Autónoma de México'
-                extrainfo={ [ 'Facultad de Estudios Superiores Acatlán', 'Licenciatura en Diseño Gráfico' ] }
-            />
+                <Section
+                    title='Idiomas'
+                >
+                    <Languages />
+                </Section>
 
-            <Section
-                title='Cursos'
-            >
-                <Courses />
-            </Section>
+                <Section
+                    title='Formación'
+                >
+                </Section>
 
-        </>
+                <section className="aboutPage__containerEducationCards">
+
+                    <EducationCard
+                        period='Actualidad' 
+                        school='Platzi'
+                        extrainfo={ [ 'Escuela de Desarrollo Web', 'Escuela de Javascript', 'Escuela de Inglés' ] }
+                    />
+
+                    <EducationCard
+                        period='Generación 2015 - 2019' 
+                        school='Universidad Nacional Autónoma de México'
+                        extrainfo={ [ 'Facultad de Estudios Superiores Acatlán', 'Licenciatura en Diseño Gráfico' ] }
+                    />
+
+                </section>
+
+                <Section
+                    title='Cursos'
+                >
+                    <Courses />
+                </Section>
+
+            </section>
+
+            
+
+        </section>
     )
 }
