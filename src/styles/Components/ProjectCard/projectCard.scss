@@ -1,0 +1,84 @@
+
+.projectCard {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto 20px auto;
+    padding: 18px;
+    border: 1px solid $black;
+    border-radius: 10px;
+
+    &__containerImg {
+        width: 100%;
+        img {
+            width: 270px;
+            height: 150px;
+        }
+    }
+
+    &__title {
+        width: 100%;
+        padding: 10px 0;
+        font-family: $headlines;
+        font-weight: 400;
+        font-size: 2rem;
+        color: $black;
+    }
+
+    &__description {
+        width: 100%;
+        font-family: $generalText;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        color: $black;
+    } 
+
+    &__containerTechnologies {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat( 3, minmax( 33%, 33% ) );
+        grid-template-rows: repeat( auto-fill );
+        place-items: left;
+        place-content: center;
+        gap: 10px 0;
+        padding: 16px 0;
+        .technology__container {
+            width: 70px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $grayMedium;
+            border-radius: 5px;
+            .technology__name {
+                font-family: $generalText;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1.4rem;
+                color: $grayText;
+            }
+        }
+    }
+
+    .visitButton {
+        width: 100%;
+        max-width: 95px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background: $blueButtons;
+        cursor: pointer;
+        a {
+            font-family: $generalText;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.4rem;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+
+}

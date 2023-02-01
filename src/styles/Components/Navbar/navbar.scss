@@ -1,0 +1,58 @@
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: $grayGeneral;
+    .logo__container, .handleMenu__container {
+        width: 30px;
+        .logo__img, .handleMenu__img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    
+    &__nameJair {
+        width: 75%;
+        font-family: $generalText;
+        font-weight: 400;
+        font-size: 2.2rem;
+        color: $black;
+    }
+    
+    .menu__list {
+        width: 35%;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        padding: 10px 20px;
+        border-bottom-left-radius: 10px;
+        background: $grayGeneral;
+        .menu__item {
+            width: 100%;
+            padding: 5px 0;
+            font-family: $generalText;
+            font-weight: 400;
+            font-size: 1.4rem;
+            text-decoration: none;
+            text-align: end;
+            color: $black;
+            cursor: pointer;
+        }
+    }
+
+    .hideMenu {
+        display: none;
+    }
+    .showMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+}

@@ -1,0 +1,41 @@
+
+.aboutPage__containerProfileImage {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background: $graybackground;
+    img {
+        width: 100%;
+    }
+}
+
+.aboutPage__containerTechnologies {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat( 3, minmax( 33%, 33% ) );
+    grid-template-rows: repeat( auto-fill );
+    place-items: center;
+    place-content: center;
+    gap: 10px 0;
+    padding: 0 0 20px 0;
+    .technology__container {
+        width: 90px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $grayMedium;
+        border-radius: 5px;
+        .technology__name {
+            font-family: $generalText;
+            font-weight: 400;
+            font-size: 1.2rem;
+            color: $grayText;
+        }
+    }
+}

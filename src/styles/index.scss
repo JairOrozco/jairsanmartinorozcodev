@@ -1,0 +1,28 @@
+
+@import './settings/settings.scss';
+
+//Navbar
+@import './Components/Navbar/navbar.scss';
+
+
+//HomePage
+@import './Pages/homePage.scss';
+
+//AboutPage
+@import './Pages/aboutPage.scss';
+
+//ContactPage
+@import './Pages/contactPage.scss';
+
+
+//Generals 
+@import './Components//Generals//section.scss';
+
+//Project Card
+@import './Components//ProjectCard/projectCard.scss';
+
+//Education Card
+@import './Components/EducationCard/educationCard.scss';
+
+//Contact Item
+@import './Components/ContactItem/contactItem.scss'

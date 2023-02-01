@@ -1,0 +1,62 @@
+
+h1 {
+    width: 100%;
+    padding: 24px 20px;
+    font-family: $headlines;
+    font-weight: 400;
+    font-size: 3.6rem;
+    line-height: 4.6rem;
+    color: $black;
+}
+
+.homePage__introduction {
+    width: 100%;
+    padding: 0px 20px;
+    font-family: $headlines;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    color: $black;
+}
+
+.homePage__socialMedia {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 20px;
+    &__containerLogoLinkedin, &__containerLogoGitHub {
+        width: 30px;
+        margin-right: 10px;
+        .homePage__socialMedia__logoLinkedin, .homePage__socialMedia__logoGitHub {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+.homePage__masInformacion {
+    width: 100%;
+    margin: 15px 0 0 0;
+    padding: 0 20px;
+    font-family: $generalText;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: underline;
+    text-decoration-color: $black;
+    color: $black;
+}
+
+.homePage__masProyectos {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 30px 0;
+    a {
+        font-family: $generalText;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: underline;
+        color: $black;
+    }
+}

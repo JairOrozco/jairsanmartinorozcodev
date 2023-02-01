@@ -1,0 +1,27 @@
+$headlines: 'Arvo', serif;
+$generalText: 'Nunito Sans', sans-serif; 
+
+//Brand Color
+$grayGeneral: #EAEAEA;
+$grayMedium: #EEEEEE;
+$graybackground: #D9D9D9;
+$grayText: #7E7E7E;
+$blueButtons: #13618C;
+
+//Typo color
+$black: #000000;
+$white: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+
+//Anotaciones
+// Padding a los lados será de 20px
