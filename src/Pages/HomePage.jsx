@@ -23,7 +23,7 @@ export const HomePage = () => {
 
             <section className="homePage__socialMedia">
                 <figure className="homePage__socialMedia__containerLogoLinkedin">
-                    <a href="https://www.linkedin.com/in/jair-san-martin-orozco/">
+                    <a href="https://www.linkedin.com/in/jair-san-martin-orozco/" target='_blank'>
                         <img 
                             className="homePage__socialMedia__logoLinkedin" 
                             src={ icon_linkedin }
@@ -32,7 +32,7 @@ export const HomePage = () => {
                     </a>
                 </figure>
                 <figure className="homePage__socialMedia__containerLogoGitHub">
-                    <a href="https://github.com/JairOrozco">
+                    <a href="https://github.com/JairOrozco" target='_blank'>
                         <img 
                             className="homePage__socialMedia__logoGitHub"
                             src={ icon_gitHub } 
